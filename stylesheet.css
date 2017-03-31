@@ -1,10 +1,15 @@
 /*Simple reset*/
 * {margin: 0; padding: 0;}
-
+@font-face {
+    font-family: Segoe_Print;
+    src: url(Segoe_Print.ttf);
+}
 body {
 	/*You can use any kind of background here.*/
+	font-family: Segoe_Print;
 	background: #6b92b9;
 }
 canvas {
+	font-family: Segoe_Print;
 	display: block;
 }
