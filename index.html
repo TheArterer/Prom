@@ -10,7 +10,7 @@
    <link rel = "stylesheet" type = "text/css" href = "stylesheet.css" />
   </head>
   <body>
-    <canvas id="canvas">Scan This</canvas>
+    <canvas id="canvas" size=""></canvas>
     <script>
       window.onload = function(){
 	      //canvas init
@@ -22,7 +22,10 @@
 	      var H = window.innerHeight;
 	      canvas.width = W;
 	      canvas.height = H;
-	
+
+		  context.fillRect(0, 0, WIDTH, HEIGHT);
+          context.fillStyle="rgba(222,232,239, 0.5)";
+          context.fill();
 	      //snowflake particles
 	      var mp = 25; //max particles
 	      var particles = [];
@@ -100,6 +103,5 @@
       }
 
     </script>
-	  <p>Scan This</p>
   </body>
 </html>
