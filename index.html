@@ -7,23 +7,22 @@
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
    <![endif]-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-   <script src="jquery.textfill.min.js"></script>
-   <link rel="shortcut icon" href="Th3Art3r3r Logo.png" />
    <link rel = "stylesheet" type = "text/css" href = "stylesheet.css" />
   </head>
   <body>
-    <cavas id="canvas"><canvas>
+    <canvas id="canvas">Scan This</canvas>
     <script>
       window.onload = function(){
 	      //canvas init
 	      var canvas = document.getElementById("canvas");
 	      var ctx = canvas.getContext("2d");
+	
 	      //canvas dimensions
 	      var W = window.innerWidth;
 	      var H = window.innerHeight;
 	      canvas.width = W;
 	      canvas.height = H;
-
+	
 	      //snowflake particles
 	      var mp = 25; //max particles
 	      var particles = [];
@@ -38,11 +37,10 @@
       	}
 	
 	      //Lets draw the flakes
-	      //ctx.clearRect(0, 0, W, H);
-	      //ctx.fillStyle = "rgba(222,232,239)";
 	      function draw()
 	      {
 		      ctx.clearRect(0, 0, W, H);
+		
 		      ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
 		      ctx.beginPath();
 		      for(var i = 0; i < mp; i++)
@@ -100,7 +98,7 @@
       	//animation loop
 	      setInterval(draw, 33);
       }
-
     </script>
+	  <p>Scan This</p>
   </body>
 </html>
